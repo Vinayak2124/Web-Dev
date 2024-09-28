@@ -1,0 +1,425 @@
+<!--Hyper is text which contains links to other texts (hyperlinks) - propsed by cs ted nelson in 1960.  Tim Berners-lee introduced www and developed the first html
+     markup lang its a way to give instructions to a computer about how content should be organized and displayed
+    HTML 2.0 (1995)
+HTML 3.0 (1997) HTML 4.0(1999) HTML 5.0 (2014)  
+EXTENSION = .HTML OR .HTM IN 3.1 VERSION(PREVIOUSLY ONLY THREE LETTERS FILES ARE AVAILABLE)  -->
+     
+<!--     INDEX FILE BY DEFAULT EXECUTE FIRST 
+  < OPENING TAG >   CONTENT   </ CLOSING TAG>
+        |              |             |
+                 HTML ELEMENTS  
+        -->
+        <!-- ITS AN CASE INSENSITIVE LANG
+lang - attributes specifies the language of the elements content
+en - for english lang  , hi - for hindi , fr - for france ,  ko -  for korean
+<html lang = "en/hi/...">
+
+     Attributes - are used along with the html tags to define the characteristics of the elements
+     it provide additional info about elements
+        -->
+         
+   <!DOCTYPE html> <!-- its connect to the latest version of the html that is html 5 .. its does not have closing tag   -->
+   <html lang = "en">  <!--  root of an html document  -->
+    <head>    <!--  it contains the info about the html document   -->
+        <title>
+            HOME PAGE    
+        </title>            <!-- title for the html page  -->
+
+<!--  internal css- for Internal  styling use style tag between the head tags -->
+    <style>    
+
+   html {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       scroll-behavior: smooth;   
+       background-color: rgb(246, 164, 71);
+       }
+       h1{
+        text-align: center;
+        border-radius: 15px solid rgb(95, 61, 25);
+        text-shadow: 10px;
+       }
+       img {
+         box-shadow: rgb(90, 56, 5) 0px 7 px 29 px 0 px ;
+         border-radius: 8px;
+       }
+       table {
+        text-align: center;
+        border: 1px solid #000;
+        border-collapse: collapse;
+
+       }
+       tr,th,td{
+        border: 3px solid #000;
+        padding: 8px;
+
+       }
+    </style>   
+    </head>
+    <body>  <!--  it contains everything you want to display on the webpages  -->
+        <h1>  <!-- lagrest heading in the html  -->
+            BEST HTML COURSE
+        </h1><hr>
+        <h2> 
+            HELLO WORLD !
+        </h2> <hr>
+        <p> This is <strong>imporatant </strong> and <em>emphasized text</em>
+         </p><hr>
+         <p>This is <u>UNDERLINE</u> and <S> STRIKETHROUGH</S></p>
+         <hr>
+         <p> The molecular formula of water is - H<sub>2</sub>O</p>
+         <hr>
+         <p> According to the einstein , Theory of relativity - e=mc<sup>2</sup>
+         </p ><hr><p >
+         <pre style="color:rgb(94, 4, 4)">
+            HI,
+
+            myself Vinayak Chaube
+            I am in SE IT
+            I live in malad
+         </pre> </p><hr> 
+          <a href="#CONTACT">Contact us</a><hr>
+          <a href="C:\Users\Vinayak\OneDrive\Pictures\shiva-parvati-.webp" download>
+            click here to download shiv-parvati image</a><hr>
+        <p>To copy a content, press <kbd>ctrl </kbd> + <kbd> C</kbd></p>
+         <hr>
+        <p> <abbr title="World Health Organization">WHO</abbr> is an international organization.
+        </p><hr>
+        <p>Hightlighting <mark>This Text</mark></p><hr>
+        <p>This is a <small> Smaller font size</small></p><hr>
+        <p>My fav color is <del>BLUE</del> it is same as strikethrough ... (Your choice)   </p><hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et quaerat reprehenderit, 
+        consectetur in provident cumque eos corrupti vel a minus quia, voluptatibus non fuga
+         nobis temporibus dicta molestias, eum debitis voluptates. Libero laboriosam possimus 
+         amet placeat officiis rerum consequuntur debitis voluptates reiciendis magni! Vitae 
+         blanditiis molestiae laboriosam ipsa. Deleniti illum cum pariatur est nobis assumenda
+          minima! Recusandae voluptate unde fugit dolores, quidem impedit error quam? <hr>
+
+          <a href="www.google.com" target="_blank" title="search anything here">Visit google </a> </p><hr>
+
+          <h1 id="CONTACT">CONTACT US</h1>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed et quaerat reprehenderit, 
+            consectetur in provident cumque eos corrupti vel a minus quia, voluptatibus non fuga
+             nobis temporibus dicta molestias, eum debitis voluptates. Libero laboriosam possimus 
+             amet placeat officiis rerum consequuntur debitis voluptates reiciendis magni! Vitae 
+             blanditiis molestiae laboriosam ipsa. Deleniti illum cum pariatur est nobis assumenda
+              minima! Recusandae voluptate unde fugit dolores, quidem impedit error quam? </p>
+              <hr>
+
+
+              <h1>Image Tag</h1>
+              <img src="bg4.jpg"
+              alt="background image" usemap="#map"
+              width ="500 " height="auto" loading="lazy" title="bg image"
+              sizes ="(max-width : 600 px) 400 px,
+              (max-width : 800 px) 600 px,
+              (max-width :1000 px) 800 px">
+              <map name= "map">
+                <area
+                shape="rect"
+                cords=" link or info"
+                alt="normal background image"
+                />
+         
+
+                <hr>
+                <h2 style="text-align: center;">Welcome to <span style="font-style: oblique;font: weight 100px; text-decoration: rgba(8, 86, 188, 0.297); box-shadow:#4f0303 ">our Website</span></h2>
+                <ul style="list-style-type: none; display: flex; gap: 20px;">
+                    <li><a href ="">Home </a></li>
+                    <li>About</li>
+                    <li>Notes</li>
+                    <li>Contact</li>
+                </ul>
+                <hr>
+                <h1>HTML TABLE</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First_name</th>
+                            <th>Last_name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vinayak</td>
+                            <td> Chaube</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td colspan="2">count:1</td></tr>
+                    </tfoot>
+                </table>
+                <hr>
+
+                <iframe src="https://www.wikipedia.org/"
+                frameborder="0"
+                width="100%"
+                height="auto"
+                ></iframe>
+                <hr>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <h1> FORM</h1>
+                <form>
+                    <div>
+                        <label for="username">Enter your username :</label>
+                        <input type="text" id="username" required autocomplete="off"/>
+                    </div>
+                    <div>
+                        <label for="password">Enter your password :</label>
+                        <input type="password" id="password" placeholder="Enter your password" required autocomplete="off" />
+                    </div>
+                    <div>
+                        <label for="cont">Enter your phone number :</label>
+                        <input type="number" id="cont" min="1" />
+                    </div>
+                    <div>
+                        <label for="gender">Gender :</label>
+                        <input type="radio" name="gender" value="Male" />Male
+                        <input type="radio" name="gender" value="Female"/>Female
+                    </div>
+                    <div>
+                        <label for="email">Enter your Email :</label>
+                        <input type="text" id="email" required 
+                        placeholder="vinci@gmai.com"
+                         readonly
+                         disabled
+                        />
+                    </div>
+                    <div>
+                        <label for="country">Enter your Country :</label>
+                        <select name="country" id="country">
+                            <option value="USA">USA</option>
+                            <option value="INDIA">INDIA</option>
+                            <option value="CANADA">CANADA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="country">Enter your Fav Country :</label>
+                        <input type="text" id="country" name="country" list="countries" />
+                        <datalist id="countries">
+                            <option value="USA">USA</option>
+                            <option value="INDIA">INDIA</option>
+                            <option value="CANADA">CANADA</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="Message">Message :</label>
+                        <input type="text" id="Message" rows="5" column="50" />
+                    </div>
+                    <div>
+                        <label for="file">Select file</label>
+                        <input type="file" name="fileupload" />
+                    </div>
+                    <input type="submit" value="submit">
+                </form>
+                </fieldset>
+
+          </body>
+   </html> 
+
+<!--   
+
+                            *****HTML HEADINGS AND TEXT*****
+HEADINGS - H1 IS THE  LARGER AND BOLD TEXT AROUND 24 PX TO 36 PX OR EVEN LARGER
+H2 - 18 PX TO 30PX
+H3 - 16 TO 24 PX
+H4- 14 TO 20 PX
+H5 - 12 TO 18 PX
+H6 IS THE SMALLEST - 10 TO 16 PX
+
+PARAGRAPH - <P> BROWSERS AUTOMATICALLY ADD A SINGLE BLANK LINE BEFORE AND AFTER EACH <P> ELEMENT</P>
+    IT CANT CONTAIN BLOCK-LEVEL ELEMENTS LIKE OTHER PARAGRAPH OR HEADINGS. INSTEAD OF THESE WE CAN USE 
+    ELEMENTS LIKE <STRONG> <EM> AND LINKS.
+
+BREAK OR SPACES - <BR> - IT IS USED TO BREAK THAT LINE AND USE NEXT LINE. 
+    <HR> - IT IS USED FOR AN HORIZONTAL LINE.
+        
+        THE HTML PARSER REDUCES EACH SEQUENCES OF WHITESPACES TO A SINGLE SPACE WHEN RENDERING THE CODE.
+
+        COMMENT TAG IN HTML ( <!-- COMMENT HERE --> <!--  ) - INFO ABOUT THE CODE FOR THE UNDERSTANDING 
+        OF THE USER.
+
+-->
+
+<!--   
+     *****HTML TEXT FROMATTING : it is used to enhcancing the visual representation of the text*****
+      BOLD AND ITALIC : <strong> <em>
+        UNDERLINE AND STRIKETHROUGH :<u> <S>
+        SUBSCRIPT AND SUPERSCRIPT :<sub> <sup>
+        PREFROMATTED TEXT : <pre> - preserving spaces and line breaks
+             <kbd> - represnts keyboard inputs , should be treated as something a user would type on a keyboard.
+             <abbr> - stands for abbreviation it is used to markup abbreviation or acroynms
+        TEXT HIGHLITGHTING :<mark> <small> <del>
+
+        INLINE STYLE : <p style "color:red">  used to style or format the text in the line
+
+-->
+
+<!--
+                                   *****ANCHOR TAG*****
+
+     the <A> tag defines a hyperlink, which is used to link from one page to another.
+        <a href ="url link"> visit </a>
+            |      uniform resource locator
+        hypertxt reference 
+
+        use target="blank" - under href tag for opening the page into new tab.
+        rel : describes the relationship between the current pages and the linked pages.
+        title : provides addtional information when hovering over the link.
+        id : it is unique and only one  {within a page redirect} (#)
+        class : more than one (.)
+
+        Download : used inside the href tag for downloading the content
+        absolute tag : when a file is not save in diff folder use this {contaning path of the file or folder}
+        relative tag : it is use when file is save in the same folder {only file name is sufficient}
+  
+        <a href=" mail to :*********.com">send email </a> - it is used to directly send email to the owner
+        <a href = "tel: +919843838984"> call us </a>
+                 
+        If you have only one attribute in href tag than it is okay ... but more than page is there than
+        you have add single or double quotes.
+        Avoid mixing of both the quotes.. it is wrong 
+       
+    *********** HTML ENTITIES **********
+    It is used to represent special characters and symbols 
+  Three different types for representing the entity - (1) named entity 
+  (2) hexadecimal numeric references 
+  (3) decimal numeric references
+
+     &lt; - <
+     &gt; - >
+     &amp; - ampersand
+     &quot; - ""
+     &apos; - '
+     &nbsp; - nonbreaking space
+     &dollar; - $
+     &copy; - copyright symbol
+     &reg; - registered trademark
+     &trade; -  TM
+     &hearts; - heart symbol
+ 
+         refer - www.htmlquick.com/reference/character-entity-reference.html
+
+-->
+<!--   
+                                    ****** IMAGE TAG ******
+       The <img> tag is used to embed(ADD) an image in html web page
+       <img src = '/image.png' alt = text>
+            |        |                 |
+         specifies   url             specifies an alternate text for the image,
+         the path                    if the image cannot be displayed
+
+         for a responsive website
+        max- width = 200px
+        height = auto
+
+        <map name= "map">---- map--- it is used to provide hidden or secret info for the spcific user by moving
+            cursor on this area
+            <area
+            shape="rect"
+            cords=" link or info"
+            alt=""
+            />
+-->
+
+<!--
+                          ***** VOID ELEMENTS OR EMPTY TAG ******
+        This are the single tag doesnot required closing tag
+
+        ex - area, br,col, hr, img, input, link, meta, source, wbr, track etc. 
+          
+           <picture>   it provide the alternate images 
+             <source srceset="" type=""/>
+             <source srceset="" type=""/>
+             <source srceset="" type=""/>
+           </picture>
+
+           The <figure> figure tag represent self- contained content, potentially with an optional caption,
+           which is specified using the <figcaption> element
+
+-->
+
+<!--
+                            HTML LISTS
+                 2 TYPES OF LIST - ORDERED LIST <OL>
+                                 - UNORDERD LIST <UL>
+        <ul style="list-style-type:circle/disc/square/none"> 
+            <li>apple<li>
+                <li>mango<li>
+                </ul>
+                <ol style="list-style-type: upper-alpha/lower/roman/decimal"> or directyly type attribute
+                    <ol type="A">
+                    <li>Class</li>
+                    <li>Class</li>
+                </ol>
+
+   <ol starts="4">
+-->
+
+<!--
+                           iFrame Tag
+          It represents a nested browsing context, embedding another html page into the current one.
+          
+          <iframe src = "url" title = "abc"></iframe>
+                                 
+-->
+<!--
+                                           AUDIO TAG
+  This element is used to embed audio content in a webpage. It supports various audio formats and
+  provides control for playback.
+  <audio controls>
+    <source src="___.mp3" type="audio/mpeg" />
+    <source src="___.wav" type="audio/wav" />
+    Your browser does not support this audio.
+
+  </audio>
+
+  List of Attributes :
+  controls : Adds playback controls (play, pause, volumr, etc)
+  autoplay : starts playback automatically.
+  loop : Repeats the media indefinitely.
+  preload : Specifies if the media should be loaded when the page load
+  poster : Display an image before the media loads.
+
+             mp3 (audio/mpeg)
+             wav (audio/wav)
+             ogg vorbis (audio/ogg)
+
+-->
+ <!--
+                                      Video Tag
+            <video controls autoplay loop muted poster=".png">
+                <source src="" type="video/mp4"/>
+                <source src=".webm" type=" video/webm"/>
+                Your browser does not support the video element.
+            </video>
+            video{
+                border-radius:10px;
+                
+            }                         
+-->
+<!--
+                             Form Tag
+            The <form> tag is used to create an HTML form for user input.
+                <input> - It is a tag used to create interactive controls for web-based forms to
+                accept the data from the users.
+                <input type ="text" name="Username">                 
+
+            -->
+
+ <!--                HTML META TAG
+    metatag are html elements that provide metadata about a webpage.
+    they are placed within the <head> section of an html document and are not visible to the 
+     users but are used by browsers, search engines and other web services to gather information
+      about the page.
+
+      <meta name="viewport" conten="with=device-width, intial-scale=1.0"> --
+      used for respnsive website
+      <meta charset="UTF-8">
+      <meta name="description" content="">
+      <meta name="keywords"  content="">
+      <meta name="author" content="">
+      <meta name="robots" content="index,follow">
+
+ -->       <!--netlify -->
